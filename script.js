@@ -1,4 +1,5 @@
-const sections = document.querySelectorAll(".section");
+// Smooth reveal animation
+const sections = document.querySelectorAll(".section, .hero");
 
 const observer = new IntersectionObserver(
   entries => {
@@ -14,7 +15,7 @@ const observer = new IntersectionObserver(
 
 sections.forEach(section => {
   section.style.opacity = 0;
-  section.style.transform = "translateY(20px)";
-  section.style.transition = "0.6s ease";
+  section.style.transform = "translateY(30px)";
+  section.style.transition = "0.7s ease";
   observer.observe(section);
 });

@@ -2,100 +2,135 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 body {
-  background-color: #0a0a0a;
+  background: #0b0b0f;
   color: #ffffff;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
+/* LINKS */
 a {
-  color: #4da3ff;
+  color: #7c7cff;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
+a:hover {
+  text-shadow: 0 0 8px rgba(124,124,255,0.6);
+}
+
+/* HERO */
 .hero {
-  padding: 80px 20px;
   max-width: 900px;
   margin: auto;
+  padding: 120px 20px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 .hero h2 {
-  color: #b0b0b0;
+  color: #7c7cff;
   margin-top: 10px;
 }
 
 .hero p {
   margin-top: 20px;
-  max-width: 700px;
-  color: #d0d0d0;
+  max-width: 720px;
+  color: #cccccc;
 }
 
 .hero-links {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 .hero-links a {
-  margin-right: 15px;
-  padding: 8px 14px;
-  border: 1px solid #4da3ff;
-  border-radius: 6px;
+  display: inline-block;
+  margin-right: 14px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: rgba(124,124,255,0.08);
+  border: 1px solid rgba(124,124,255,0.3);
+  box-shadow: 0 0 20px rgba(124,124,255,0.15);
 }
 
+.hero-links a:hover {
+  box-shadow: 0 0 35px rgba(124,124,255,0.45);
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
 .section {
-  padding: 60px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
+  padding: 80px 20px;
 }
 
 .section h3 {
-  font-size: 2rem;
-  margin-bottom: 25px;
+  font-size: 2.3rem;
+  margin-bottom: 35px;
 }
 
+/* CARDS */
 .card {
-  border: 1px solid #222;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  background: #12121a;
+  padding: 26px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 0 30px rgba(124,124,255,0.35),
+    0 0 60px rgba(124,124,255,0.15);
 }
 
 .card h4 {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
 }
 
 .card p {
-  margin: 10px 0;
+  margin: 15px 0;
   color: #cccccc;
 }
 
 .card span {
   font-size: 0.9rem;
-  color: #888;
+  color: #8a8a8a;
 }
 
+/* SKILLS */
 .skills {
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 10px;
-  list-style: none;
+  gap: 14px;
 }
 
 .skills li {
-  background: #161616;
-  padding: 10px;
-  border-radius: 6px;
+  background: #161622;
+  padding: 12px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(124,124,255,0.12);
+  transition: all 0.3s ease;
 }
 
+.skills li:hover {
+  box-shadow: 0 0 25px rgba(124,124,255,0.45);
+  transform: translateY(-4px);
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
+  padding: 40px;
   color: #777;
 }
